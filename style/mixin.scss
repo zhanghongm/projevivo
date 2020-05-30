@@ -1,0 +1,58 @@
+//专门存放混合的公共样式
+//共享的一些混合
+
+//清除浮动
+@mixin clearBoth {
+    content: "";
+    height: 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden; 
+}
+// 头部字体移入变色
+@mixin headerHover {
+        color: #ccc;
+        &:hover{
+            color: #848484;
+        }
+}
+
+@mixin mainWidth {
+    width: 1200px;
+    margin: auto;
+}
+// 文本超出隐藏
+@mixin textOverflow {
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+// V购箭头
+@mixin arrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #A4A4A4;
+    font-size: 32px;
+    color: #A4A4A4;
+}
+// li两端对齐
+@mixin justify {
+    display: flex;
+    flex-wrap: wrap;     
+    justify-content: space-between;
+}
+// li的hover
+@mixin lihover {
+    &:hover{
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    }
+}
+// 楼层介绍
+@mixin introduce {
+    text-align: center;
+    padding: 38px 0 25px 0;
+    font-size: 24px;
+}
