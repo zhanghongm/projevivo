@@ -38,12 +38,7 @@
     font-size: 32px;
     color: #A4A4A4;
 }
-// li两端对齐
-@mixin justify {
-    display: flex;
-    flex-wrap: wrap;     
-    justify-content: space-between;
-}
+
 // li的hover
 @mixin lihover {
     &:hover{

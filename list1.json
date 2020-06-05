@@ -1,0 +1,50 @@
+[{
+	"id": 101,
+    "url": "../images/v-1.png",
+    "name":"vivo X27 8GB+128GB版 雀羽蓝",
+    "desc":"限时享3期免息",
+    "text":"2198",
+    "textdisabled":"2498"
+}, {
+	"id": 102,
+    "url": "../images/v-2.png",
+    "name":"vivo 2.25A Type-C数据线",
+    "desc":"直降25元，限量抢购",
+    "text":"24",
+    "textdisabled":"49"
+}, {
+	"id": 103,
+    "url": "../images/v-3.png",
+    "name":"NEX原装保护膜",
+    "desc":"直降15元",
+    "text":"14",
+    "textdisabled":"29"
+}, {
+	"id": 104,
+    "url": "../images/v-4.png",
+    "name":"vivo 22.5W闪充充电器",
+    "desc":"直降40元",
+    "text":"59",
+    "textdisabled":"99"  
+}, {
+	"id": 105,
+    "url": "../images/v-5.png",
+    "name":"iQOO Pro 12GB+128GB 竞速黑",
+    "desc":"6期免息；赠组合配件券",
+    "text":"2898",
+    "textdisabled":"3198" 
+},{
+    "id": 106,
+    "url": "../images/v-5.png",
+    "name":"iQOO Pro 12GB+128GB 竞速黑",
+    "desc":"6期免息；赠组合配件券",
+    "text":"2898",
+    "textdisabled":"3198" 
+},{
+    "id": 107,
+    "url": "../images/v-5.png",
+    "name":"iQOO Pro 12GB+128GB 竞速黑",
+    "desc":"6期免息；赠组合配件券",
+    "text":"2898",
+    "textdisabled":"3198" 
+}]

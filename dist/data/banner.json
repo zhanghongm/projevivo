@@ -1,16 +1,23 @@
-[{
-	"id": 1,
-	"url": "./images/banner1.jpg"
-}, {
-	"id": 2,
-	"url": "./images/banner2.png"
-}, {
-	"id": 3,
-	"url": "./images/banner3.jpg"
-}, {
-	"id": 4,
-	"url": "./images/banner4.jpg"
-}, {
-	"id": 5,
-	"url": "./images/banner5.png"
-}]
+{
+    "banner":[
+        {
+            "id":1,
+            "url":"../images/banner1.jpg"
+        },
+        {
+            "id":2,
+            "url":"../images/banner2.png"
+        },
+        {
+            "id":3,
+            "url":"../images/banner3.jpg"
+        },
+        {
+            "id":4,
+            "url":"../images/banner4.jpg"
+        },
+        {
+            "id":5,
+            "url":"../images/banner5.png"
+        }]
+}

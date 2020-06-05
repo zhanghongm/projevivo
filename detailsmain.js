@@ -1,0 +1,21 @@
+console.log("加载成功");
+require.config({
+    paths:{
+        "jquery":"jquery-1.11.3",
+        "jquery-cookie":"jquery.cookie",
+        "details":"details",
+        "detaildata":"detaildata"
+    },
+    shim:{
+        "jquery-cookie":["jquery"],
+        "parabola":{
+            exports:"_"
+        }
+    }
+});
+require(["details","detaildata"],function(details,detaildata){
+        details.enlarge();
+        details.tab();
+        detaildata.download();
+        detaildata.shoping();
+})

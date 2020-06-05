@@ -97,12 +97,29 @@ nav{
             }
         }
     }
+    .btns{
+        position: absolute;
+        bottom: 20px;
+        left: 45%;
+        .btn{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border:1px solid #ccc;
+            margin-right: 10px;
+            float: left;
+        }
+        .btnactive{
+            background:#fff;
+        }
+    }
     .sidebar-wrap{ 
         height: 523px;
-        @include mainWidth; 
-        position: relative;
-        .sidebar{
-            background: rgba(255,255,255,.65);
+        position: absolute;
+        top:-5px;
+        left: 85px;
+       .sidebar{
+            background: rgba(255,255,255,.6);
             width: 200px;
             height: 482px;
             position: absolute;
@@ -114,12 +131,55 @@ nav{
             li{
                 height: 60px;
                 padding: 0 48px 0 42px;
+                position: relative;
                 &:hover{
                     background: #ffffff;
                 }
                 a{
+                    display: inline-block;
+                    width: 110px;
+                    height: 60px;
                     line-height: 60px;
                     font-size: 14px;
+                }
+                span{
+                    position: absolute;
+                    right: 20px;
+                    line-height: 60px;
+                }
+            }
+        }
+        .menuright{
+            width: 656px;
+            height: 457px;
+            background: #ffffff;
+            position: absolute;
+            left: 210px;
+            top:25px;
+            visibility: hidden;
+            padding: 8px 50px 0 44px;
+            ul{
+                width: 656px;
+                height: 453px;
+                li{
+                    width: 222px;
+                    height: 46px;
+                    margin-right: 12px;
+                    margin-bottom: 10px;
+                    a{
+                        display: inline-block;
+                        width: 46px;
+                        height: 46px;
+                        img{
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    span{
+                        font-size: 14px;
+                        margin-left: 8px;
+                    }
                 }
             }
         }
@@ -157,6 +217,7 @@ nav{
     .rush-title{
         height: 32px;
         padding-bottom: 25px;
+        position: relative;
         img{
             height: 26px;
             float: left;
@@ -164,8 +225,13 @@ nav{
         p{
             margin-left: 10px;
             float: left;
-            color: #999;
-            font-size: 16px;
+
+
+            i{
+                display: inline-block;
+                color: #999;
+                font-size: 16px;
+            }
             span{
                 display: inline-block;
                 border-radius: 3px;
@@ -176,7 +242,7 @@ nav{
                 background-color: #EC0404;
                 font-size: 18px;
                 color: #fff;
-                margin: 0 6px;
+                margin:0 6px;
             }
         }
         a{
@@ -186,76 +252,84 @@ nav{
                 color:#f51919;
             }
         }
+        .lt{
+            position: absolute;
+            left: -50px;
+            top:212px;
+            @include arrow;
+            cursor: pointer;
+        }
+        .gt{
+            position: absolute;
+            right:-45px;
+            top:212px;
+            @include arrow;
+            cursor: pointer;
+        }
     }
     .floorlist-2{
         height: 390px;
         position: relative;
+        overflow: hidden;
         ul{
             height: 390px;
-            @include justify;
-        }
-        li{
-            width: 293px;
-            height: 380px;
-            background: #ffffff;
-            float: left;
-            @include lihover;
-            a{
-                display: block;
-                width: 290px;
-                height: 213px;
-                text-align: center;
-                img{
-                    width: 172px;
-                    height: 172px;
-                    margin-top: 41px;
-                }
-            }
-            .info{
-                height: 117px;
-                text-align: center;
-                padding: 0 20px;
-
-                .name{
-                    padding-top: 16px;
-                    font-size: 16px;
-                    line-height: 30px;
-                    @include textOverflow;
-                }
-                .desc{
-                    margin-top: 10px;
-                    font-size: 12px;
-                    @include textOverflow;
-
-                }
-                .price{
-                    margin-top: 20px;
-                    .present{
-                        font-size: 22px;
-                        color: #f51919;
+            position: absolute;
+            overflow: hidden;
+            li{
+                width: 293px;
+                height: 380px;
+                background: #ffffff;
+                float: left;
+                @include lihover;
+                margin-bottom: 10px;
+                margin-right: 7px;
+                a{
+                    display: block;
+                    width: 290px;
+                    height: 213px;
+                    text-align: center;
+                    img{
+                        width: 172px;
+                        height: 172px;
+                        margin-top: 41px;
                     }
-                   .origina{
-                        margin-left: 6px;
-                        text-decoration: line-through;
-                        color: #aaa;
-                        font-size: 14px;
-                   }
+                }
+                .info{
+                    height: 117px;
+                    text-align: center;
+                    padding: 0 20px;
+    
+                    .name{
+                        padding-top: 16px;
+                        font-size: 16px;
+                        line-height: 30px;
+                        @include textOverflow;
+                    }
+                    .desc{
+                        margin-top: 10px;
+                        font-size: 12px;
+                        @include textOverflow;
+    
+                    }
+                    .price{
+                        margin-top: 20px;
+                        .present{
+                            font-size: 22px;
+                            color: #f51919;
+                        }
+                       .origina{
+                            margin-left: 6px;
+                            text-decoration: line-through;
+                            color: #aaa;
+                            font-size: 14px;
+                       }
+                    }
                 }
             }
         }
-        .lt{
-            position: absolute;
-            left: -50px;
-            top:35%;
-            @include arrow;
 
-        }
-        .gt{
-            position: absolute;
-            right:-50px;
-            top:35%;
-            @include arrow;
-        }
+
+
     }
     // 热卖
     .best{
@@ -264,7 +338,6 @@ nav{
     .floorlist-3{
         height: 521px;
         ul{
-            @include justify;
             li{
                 width: 394px;
                 height: 511px;
@@ -272,6 +345,10 @@ nav{
                 background: #fff;
                 margin-bottom: 10px;
                 @include lihover;
+                margin-right: 9px;
+                &:nth-of-type(3n){
+                    margin-right: 0;
+                }
                 a{
                     display: block;
                     width: 394px;
@@ -304,43 +381,82 @@ nav{
         
     }
     // 精品手机
-    .floorlist-4{
+    .floorlist4{
         height: 780px;
         ul{
             height: 780px;
             .advertising{
                 width: 595px;
                 margin-bottom: 10px;
+                margin-right: 5px;
+                &:nth-of-type(4n){
+                    margin-right: 0;
+                }
                 a{
                     width:595px;
                     height: 380px;
+                    text-align: center;
                     img{
                         width: 100%;
                         height: 100%;
                         margin-top: 0;
                     }
                 }
+                
             }
+
             li{
+                width: 293px;
+                height: 380px;
+                background: #ffffff;
+                float: left;
+                @include lihover;
+                margin-bottom: 10px;
+                margin-right: 7px;
+                a{
+                    display: block;
+                    width: 293px;
+                    height: 213px;
+                    text-align: center;
+                    img{
+                        display: inline-block;
+                        width: 172px;
+                        height: 172px;
+                        margin-top: 41px;
+                    }
+                }
                 .info{
-                    padding:0;
+                    height: 117px;
+                    text-align: center;
+                    padding: 0 20px;
+                    .name{
+                        padding-top: 16px;
+                        font-size: 16px;
+                        line-height: 30px;
+                        @include textOverflow;
+                    }
                     .desc{
+                        font-size: 12px;
+                        @include textOverflow;
                         padding: 2px 15px 40px;
                     }
                     .price{
-                        margin: 0;
-                        font-size:16px ;
+                        font-size: 16px;
                         color: #f51919;
                     }
                 }
             }
-            
-            
+
         }
         }
         // 精品配件
-        .floorlist-5{
+        #floorlist-5{
             padding-bottom: 40px;
+            li{
+                &:nth-child(4n){
+                    margin-right: 0;
+                }
+            }
         }
 padding-bottom: 30px;
 }

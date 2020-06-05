@@ -1,0 +1,76 @@
+@import "mixin";
+body{
+    background: #f7f7f5;
+}
+header{
+    background: #333;
+    height: 32px;
+    font-size: 12px;
+    ul{
+        padding-left:60px;
+        height: 32px;
+        float: left;
+        li{
+            padding-right: 42px;
+            float: left;
+            line-height: 32px;
+            a{
+                @include headerHover;
+            }
+            
+        } 
+    }
+    .header-us{
+        padding-right: 60px;
+        float: right;
+        .shop{
+            margin-right: 16px;
+            float: left;
+            line-height: 32px;
+            @include headerHover;
+        }
+        .user-login{
+            float: left;
+            line-height: 32px;
+            a{
+                margin-left: 18px;
+                @include headerHover;
+            }
+            i{
+                color: #ccc;
+                margin-left: 18px;
+            }
+        }
+    }
+}
+nav{
+    height: 68px;
+    @include mainWidth;
+    line-height: 68px;
+    h1{
+        float: left;
+    }
+    ul{
+        height: 68px;
+        font-size: 18px;
+        color: #000;
+        margin-left: 60px;
+        float: left;
+        li{
+            float: left;
+            font-weight: 540;
+            line-height: 68px;
+            padding:0 17px;
+        }
+
+    }
+    span{
+        display:block;
+        background: url(../images/search.svg) no-repeat;
+        width: 20px;
+        height: 68px;
+        float: right;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+}

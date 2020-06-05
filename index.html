@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./font/iconfont.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.min.css">
-
+    <script src="./js/require.js" defer async="true" data-main="./js/main.js"></script>
 </head>
 <body>
     <!-- 头部 -->
@@ -49,21 +49,34 @@
     </nav>
     <!-- banner 侧栏 -->
     <div class="banner-wrap">
+        <!-- banner -->
         <ul class="banner">
-            <li class="banner-img"><img src="./images/banner3.jpg" alt=""></li>
+            <!-- <li class="banner-img"><img src="./images/banner1.jpg" alt=""></li> -->
 
         </ul>
+        <!-- 按钮 -->
+        <div class="btns">
+            <!-- <div class="btn btnactive"></div> -->
+        </div>
+
         <!-- 侧栏 -->
         <div class="sidebar-wrap">
             <ul class="sidebar">
-                <li><a href="">手机</a></li>              
-                <li><a href="">手机充电</a></li>              
-                <li><a href="">手机配件</a></li>              
-                <li><a href="">音乐设备</a></li>              
-                <li><a href="">智能硬件</a></li>              
-                <li><a href="">游戏摄影</a></li>              
-                <li><a href="">日用出行</a></li>              
+                <li><a href="html/listpage.html">手机    </a><span>＞</span></li>              
+                <li><a href="">手机充电</a><span>＞</span></li>              
+                <li><a href="">手机配件</a><span>＞</span></li>              
+                <li><a href="">音乐设备</a><span>＞</span></li>              
+                <li><a href="">智能硬件</a><span>＞</span></li>              
+                <li><a href="">游戏摄影</a><span>＞</span></li>              
+                <li><a href="">日用出行</a><span>＞</span></li>              
             </ul>
+            <!-- 右侧 -->
+            <div class="menuright">
+                <ul>
+                    <li><a href=""><img src="" alt=""></a><span>手机</span></li>
+                    
+                </ul>
+            </div>
         </div>    
     </div>
     <!-- 列表 -->
@@ -78,14 +91,16 @@
         <!-- V抢购 -->
         <div class="rush-title">
             <img src="./images/vgo.png" alt="">
-            <p>距离结束<span>08</span>时<span>30</span>分<span>17</span>秒</p>
+            <p id="end"><i>距离结束</i><span id="hours">0</span><i>时</i><span id="min">0</span><i>分</i><span id="sec">0</span><i>秒</i></p>
             <a href="">更多场次></a>
+            <span id="lt" class="iconfont lt">&#xe658;</span>
+            <span id="gt" class="iconfont gt">&#xe659;</span>
         </div>
         <div class="floorlist-2">
-            <ul>
-                <li>
+            <ul id="Jlist1">
+                <!-- <li>
                     <a href="">
-                        <img src="./images/10002170_1585378156682_750x750.png" alt="">
+                        <img src="" alt="">
                     </a>
                     <div class="info">
                         <p class="name">iQOO 3 原装保护膜</p>
@@ -96,12 +111,9 @@
                         </p>
                     </div>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
+                 -->
             </ul>
-            <span class="iconfont lt">&#xe658;</span>
-            <span class="iconfont gt">&#xe659;</span>
+            
         </div> 
         <!-- 热卖专区 -->
         <div class="best">
@@ -109,71 +121,60 @@
         </div>
         <div class="floorlist-3">
             <ul>
-                <li>
+                <!-- <li>
                     <a href="">
-                        <img src="./images/10002225_1587193547603_750x750.png" alt="">
+                        <img src="" alt="">
                     </a>
                     <div class="info3">
                         <p class="name">iQOO Neo3 </p>
                         <p class="desc"> 8GB+128GB/144Hz高刷竞速屏</p>
                         <p class="price">￥2998.00</p>
                     </div>
-                </li>
-                <li></li>
-                <li></li>
+                </li> -->
+
             </ul>
         </div>
         <!-- 精品手机 -->
         <div class="best">
             精品手机
         </div>
-        <div class="floorlist-2 floorlist-4">
+        <div id="floorlist-4" class="floorlist4">
             <ul>
                 <li class="advertising">
                     <a href="">
                         <img src="./images/S6.jpg" alt="">
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="">
-                        <img src="./images/10001922_1582525194561_750x750.png" alt="">
+                        <img src="" alt="">
                     </a>
                     <div class="info">
                         <p class="name">iQOO 3 原装保护膜</p>
                         <p class="desc">直降15元，限量抢购</p>
                         <p class="price">￥3797.00</p>
                     </div>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                </li> -->
+ 
             </ul>
         </div>
         <!-- 精品配件 -->
         <div class="best">
             精品配件
         </div>
-        <div class="floorlist-2 floorlist-4 floorlist-5">
+        <div id="floorlist-5" class="floorlist4">
             <ul>
-                <li>
+                <!-- <li>
                     <a href="">
-                        <img src="./images/10002173_1589354060038_750x750.png" alt="">
+                        <img src="" alt="">
                     </a>
                     <div class="info">
                         <p class="name">iQOO 3 原装保护膜</p>
                         <p class="desc">直降15元，限量抢购</p>
                         <p class="price">￥3797.00</p>
                     </div>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                </li> -->
+
             </ul>
         </div>
     </div>

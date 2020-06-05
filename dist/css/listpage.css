@@ -1,0 +1,248 @@
+body {
+  background: #f7f7f5; }
+
+header {
+  background: #333;
+  height: 32px;
+  font-size: 12px; }
+  header ul {
+    padding-left: 60px;
+    height: 32px;
+    float: left; }
+    header ul li {
+      padding-right: 42px;
+      float: left;
+      line-height: 32px; }
+      header ul li a {
+        color: #ccc; }
+        header ul li a:hover {
+          color: #848484; }
+  header .header-us {
+    padding-right: 60px;
+    float: right; }
+    header .header-us .shop {
+      margin-right: 16px;
+      float: left;
+      line-height: 32px;
+      color: #ccc; }
+      header .header-us .shop:hover {
+        color: #848484; }
+    header .header-us .user-login {
+      float: left;
+      line-height: 32px; }
+      header .header-us .user-login a {
+        margin-left: 18px;
+        color: #ccc; }
+        header .header-us .user-login a:hover {
+          color: #848484; }
+      header .header-us .user-login i {
+        color: #ccc;
+        margin-left: 18px; }
+
+nav {
+  height: 68px;
+  width: 1200px;
+  margin: auto;
+  line-height: 68px; }
+  nav h1 {
+    float: left; }
+  nav ul {
+    height: 68px;
+    font-size: 18px;
+    color: #000;
+    margin-left: 60px;
+    float: left; }
+    nav ul li {
+      float: left;
+      font-weight: 540;
+      line-height: 68px;
+      padding: 0 17px; }
+  nav span {
+    display: block;
+    background: url(../images/search.svg) no-repeat;
+    width: 20px;
+    height: 68px;
+    float: right;
+    margin-top: 25px;
+    cursor: pointer; }
+
+.banner-wrap {
+  height: 457px;
+  position: relative;
+  margin-bottom: 50px; }
+  .banner-wrap .banner {
+    height: 457px;
+    float: left; }
+    .banner-wrap .banner .banner-img {
+      width: 100%;
+      height: 457px;
+      overflow: hidden;
+      position: absolute; }
+      .banner-wrap .banner .banner-img img {
+        position: absolute;
+        left: 50%;
+        margin-left: -950px;
+        height: 457px; }
+
+.list-wrap {
+  height: 1700px; }
+  .list-wrap .list {
+    width: 1200px;
+    margin: auto;
+    position: relative; }
+    .list-wrap .list li {
+      width: 394px;
+      height: 550px;
+      background: #ffffff;
+      float: left;
+      margin: 0 5px 10px 0;
+      text-align: center; }
+      .list-wrap .list li:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+      .list-wrap .list li a {
+        display: block;
+        width: 394px;
+        height: 298px;
+        text-align: center; }
+        .list-wrap .list li a img {
+          width: 298px;
+          height: 298px;
+          margin: 28px 48px; }
+      .list-wrap .list li .info {
+        width: 275px;
+        height: 117px;
+        text-align: center;
+        padding: 0 60px;
+        margin-top: 20px; }
+        .list-wrap .list li .info .name {
+          padding-top: 16px;
+          font-size: 20px;
+          line-height: 30px;
+          color: #333333;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .list-wrap .list li .info .desc {
+          margin-top: 16px;
+          font-size: 14px;
+          color: #666666;
+          height: 45px;
+          overflow: hidden;
+          line-height: 24px; }
+        .list-wrap .list li .info .price {
+          margin-top: 30px; }
+          .list-wrap .list li .info .price .present {
+            font-size: 24px;
+            color: #d92121; }
+          .list-wrap .list li .info .price .origina {
+            margin-left: 6px;
+            text-decoration: line-through;
+            color: #aaa;
+            font-size: 14px; }
+      .list-wrap .list li .addcar {
+        width: 114px;
+        height: 36px;
+        border-radius: 100px;
+        background-image: linear-gradient(-90deg, #e51422, #ff0c53);
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 36px;
+        margin-left: 140px;
+        margin-top: 25px; }
+
+.foot-shopwrap {
+  background: #f0f0f0;
+  height: 89px;
+  padding: 30px 0 70px 0; }
+  .foot-shopwrap .shop-foot {
+    width: 1200px;
+    margin: auto;
+    height: 89px;
+    border-bottom: 1px solid #dedede; }
+    .foot-shopwrap .shop-foot ul {
+      height: 28px;
+      padding: 30px 0; }
+      .foot-shopwrap .shop-foot ul li {
+        width: 300px;
+        height: 28px;
+        text-align: center;
+        float: left; }
+        .foot-shopwrap .shop-foot ul li span {
+          display: inline-block;
+          width: 33px;
+          height: 33px;
+          line-height: 33px;
+          margin: auto;
+          font-size: 22px; }
+        .foot-shopwrap .shop-foot ul li em {
+          font-size: 18px;
+          margin-left: 5px; }
+
+.foot-list {
+  background: #f0f0f0;
+  height: 434px; }
+  .foot-list .foot {
+    height: 284px;
+    width: 1200px;
+    margin: auto; }
+    .foot-list .foot ul {
+      width: 900px;
+      height: 284px;
+      float: left; }
+      .foot-list .foot ul li {
+        float: left;
+        width: 180px;
+        height: 284px; }
+        .foot-list .foot ul li .one {
+          color: #333;
+          font-size: 16px;
+          padding-bottom: 40px;
+          margin: 0; }
+        .foot-list .foot ul li p {
+          font-size: 14px;
+          color: #666666;
+          line-height: 17px;
+          margin-bottom: 18px; }
+    .foot-list .foot .foot-right {
+      float: right;
+      width: 180px; }
+      .foot-list .foot .foot-right a {
+        display: inline-block;
+        font-size: 22px;
+        margin-bottom: 30px; }
+        .foot-list .foot .foot-right a span {
+          padding-right: 8px; }
+      .foot-list .foot .foot-right .phone {
+        height: 48px;
+        margin-bottom: 24px; }
+        .foot-list .foot .foot-right .phone span {
+          color: #415fff;
+          font-size: 24px; }
+        .foot-list .foot .foot-right .phone em {
+          padding-top: 10px;
+          color: #333;
+          font-size: 14px; }
+      .foot-list .foot .foot-right .vivo {
+        font-size: 14px; }
+      .foot-list .foot .foot-right .codelist {
+        height: 20px;
+        margin-top: 13px; }
+        .foot-list .foot .foot-right .codelist i {
+          font-size: 22px;
+          margin-right: 10px; }
+  .foot-list .bottom {
+    width: 1200px;
+    margin: auto;
+    height: 15px;
+    margin-top: 74px;
+    padding: 30px 0;
+    border-top: 1px solid #dedede; }
+    .foot-list .bottom p {
+      text-align: center; }
+      .foot-list .bottom p i {
+        display: inline-block;
+        width: 14px;
+        height: 14px; }
+        .foot-list .bottom p i img {
+          width: 100%;
+          height: 100%; }

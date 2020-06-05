@@ -87,13 +87,26 @@ nav {
         left: 50%;
         margin-left: -1280px;
         height: 523px; }
+  .banner-wrap .btns {
+    position: absolute;
+    bottom: 20px;
+    left: 45%; }
+    .banner-wrap .btns .btn {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+      float: left; }
+    .banner-wrap .btns .btnactive {
+      background: #fff; }
   .banner-wrap .sidebar-wrap {
     height: 523px;
-    width: 1200px;
-    margin: auto;
-    position: relative; }
+    position: absolute;
+    top: -5px;
+    left: 85px; }
     .banner-wrap .sidebar-wrap .sidebar {
-      background: rgba(255, 255, 255, 0.65);
+      background: rgba(255, 255, 255, 0.6);
       width: 200px;
       height: 482px;
       position: absolute;
@@ -104,12 +117,48 @@ nav {
       justify-content: center; }
       .banner-wrap .sidebar-wrap .sidebar li {
         height: 60px;
-        padding: 0 48px 0 42px; }
+        padding: 0 48px 0 42px;
+        position: relative; }
         .banner-wrap .sidebar-wrap .sidebar li:hover {
           background: #ffffff; }
         .banner-wrap .sidebar-wrap .sidebar li a {
+          display: inline-block;
+          width: 110px;
+          height: 60px;
           line-height: 60px;
           font-size: 14px; }
+        .banner-wrap .sidebar-wrap .sidebar li span {
+          position: absolute;
+          right: 20px;
+          line-height: 60px; }
+    .banner-wrap .sidebar-wrap .menuright {
+      width: 656px;
+      height: 457px;
+      background: #ffffff;
+      position: absolute;
+      left: 210px;
+      top: 25px;
+      visibility: hidden;
+      padding: 8px 50px 0 44px; }
+      .banner-wrap .sidebar-wrap .menuright ul {
+        width: 656px;
+        height: 453px; }
+        .banner-wrap .sidebar-wrap .menuright ul li {
+          width: 222px;
+          height: 46px;
+          margin-right: 12px;
+          margin-bottom: 10px; }
+          .banner-wrap .sidebar-wrap .menuright ul li a {
+            display: inline-block;
+            width: 46px;
+            height: 46px; }
+            .banner-wrap .sidebar-wrap .menuright ul li a img {
+              display: inline-block;
+              width: 100%;
+              height: 100%; }
+          .banner-wrap .sidebar-wrap .menuright ul li span {
+            font-size: 14px;
+            margin-left: 8px; }
 
 .wrapper {
   width: 1200px;
@@ -136,15 +185,18 @@ nav {
           height: 100%; }
   .wrapper .rush-title {
     height: 32px;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    position: relative; }
     .wrapper .rush-title img {
       height: 26px;
       float: left; }
     .wrapper .rush-title p {
       margin-left: 10px;
-      float: left;
-      color: #999;
-      font-size: 16px; }
+      float: left; }
+      .wrapper .rush-title p i {
+        display: inline-block;
+        color: #999;
+        font-size: 16px; }
       .wrapper .rush-title p span {
         display: inline-block;
         border-radius: 3px;
@@ -161,145 +213,187 @@ nav {
       font-size: 14px; }
       .wrapper .rush-title a:hover {
         color: #f51919; }
-  .wrapper .floorlist-2 {
-    height: 390px;
-    position: relative; }
-    .wrapper .floorlist-2 ul {
-      height: 390px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    .wrapper .floorlist-2 li {
-      width: 293px;
-      height: 380px;
-      background: #ffffff;
-      float: left; }
-      .wrapper .floorlist-2 li:hover {
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
-      .wrapper .floorlist-2 li a {
-        display: block;
-        width: 290px;
-        height: 213px;
-        text-align: center; }
-        .wrapper .floorlist-2 li a img {
-          width: 172px;
-          height: 172px;
-          margin-top: 41px; }
-      .wrapper .floorlist-2 li .info {
-        height: 117px;
-        text-align: center;
-        padding: 0 20px; }
-        .wrapper .floorlist-2 li .info .name {
-          padding-top: 16px;
-          font-size: 16px;
-          line-height: 30px;
-          color: #333333;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis; }
-        .wrapper .floorlist-2 li .info .desc {
-          margin-top: 10px;
-          font-size: 12px;
-          color: #333333;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis; }
-        .wrapper .floorlist-2 li .info .price {
-          margin-top: 20px; }
-          .wrapper .floorlist-2 li .info .price .present {
-            font-size: 22px;
-            color: #f51919; }
-          .wrapper .floorlist-2 li .info .price .origina {
-            margin-left: 6px;
-            text-decoration: line-through;
-            color: #aaa;
-            font-size: 14px; }
-    .wrapper .floorlist-2 .lt {
+    .wrapper .rush-title .lt {
       position: absolute;
       left: -50px;
-      top: 35%;
+      top: 212px;
       width: 34px;
       height: 34px;
       border-radius: 50%;
       border: 1px solid #A4A4A4;
       font-size: 32px;
-      color: #A4A4A4; }
-    .wrapper .floorlist-2 .gt {
+      color: #A4A4A4;
+      cursor: pointer; }
+    .wrapper .rush-title .gt {
       position: absolute;
-      right: -50px;
-      top: 35%;
+      right: -45px;
+      top: 212px;
       width: 34px;
       height: 34px;
       border-radius: 50%;
       border: 1px solid #A4A4A4;
       font-size: 32px;
-      color: #A4A4A4; }
+      color: #A4A4A4;
+      cursor: pointer; }
+  .wrapper .floorlist-2 {
+    height: 390px;
+    position: relative;
+    overflow: hidden; }
+    .wrapper .floorlist-2 ul {
+      height: 390px;
+      position: absolute;
+      overflow: hidden; }
+      .wrapper .floorlist-2 ul li {
+        width: 293px;
+        height: 380px;
+        background: #ffffff;
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 7px; }
+        .wrapper .floorlist-2 ul li:hover {
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+        .wrapper .floorlist-2 ul li a {
+          display: block;
+          width: 290px;
+          height: 213px;
+          text-align: center; }
+          .wrapper .floorlist-2 ul li a img {
+            width: 172px;
+            height: 172px;
+            margin-top: 41px; }
+        .wrapper .floorlist-2 ul li .info {
+          height: 117px;
+          text-align: center;
+          padding: 0 20px; }
+          .wrapper .floorlist-2 ul li .info .name {
+            padding-top: 16px;
+            font-size: 16px;
+            line-height: 30px;
+            color: #333333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .wrapper .floorlist-2 ul li .info .desc {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #333333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .wrapper .floorlist-2 ul li .info .price {
+            margin-top: 20px; }
+            .wrapper .floorlist-2 ul li .info .price .present {
+              font-size: 22px;
+              color: #f51919; }
+            .wrapper .floorlist-2 ul li .info .price .origina {
+              margin-left: 6px;
+              text-decoration: line-through;
+              color: #aaa;
+              font-size: 14px; }
   .wrapper .best {
     text-align: center;
     padding: 38px 0 25px 0;
     font-size: 24px; }
   .wrapper .floorlist-3 {
     height: 521px; }
-    .wrapper .floorlist-3 ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      .wrapper .floorlist-3 ul li {
+    .wrapper .floorlist-3 ul li {
+      width: 394px;
+      height: 511px;
+      float: left;
+      background: #fff;
+      margin-bottom: 10px;
+      margin-right: 9px; }
+      .wrapper .floorlist-3 ul li:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+      .wrapper .floorlist-3 ul li:nth-of-type(3n) {
+        margin-right: 0; }
+      .wrapper .floorlist-3 ul li a {
+        display: block;
         width: 394px;
-        height: 511px;
-        float: left;
-        background: #fff;
-        margin-bottom: 10px; }
-        .wrapper .floorlist-3 ul li:hover {
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
-        .wrapper .floorlist-3 ul li a {
-          display: block;
-          width: 394px;
-          height: 288px;
-          text-align: center; }
-          .wrapper .floorlist-3 ul li a img {
-            width: 230px;
-            height: 230px;
-            margin-top: 58px; }
-        .wrapper .floorlist-3 ul li .info3 {
-          text-align: center;
-          color: #333333;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis; }
-          .wrapper .floorlist-3 ul li .info3 .name {
-            font-size: 20px;
-            padding-top: 29px; }
-          .wrapper .floorlist-3 ul li .info3 .desc {
-            padding: 8px 50px 53px;
-            font-size: 14px; }
-          .wrapper .floorlist-3 ul li .info3 .price {
-            font-size: 18px;
-            color: #f51919; }
-  .wrapper .floorlist-4 {
+        height: 288px;
+        text-align: center; }
+        .wrapper .floorlist-3 ul li a img {
+          width: 230px;
+          height: 230px;
+          margin-top: 58px; }
+      .wrapper .floorlist-3 ul li .info3 {
+        text-align: center;
+        color: #333333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .wrapper .floorlist-3 ul li .info3 .name {
+          font-size: 20px;
+          padding-top: 29px; }
+        .wrapper .floorlist-3 ul li .info3 .desc {
+          padding: 8px 50px 53px;
+          font-size: 14px; }
+        .wrapper .floorlist-3 ul li .info3 .price {
+          font-size: 18px;
+          color: #f51919; }
+  .wrapper .floorlist4 {
     height: 780px; }
-    .wrapper .floorlist-4 ul {
+    .wrapper .floorlist4 ul {
       height: 780px; }
-      .wrapper .floorlist-4 ul .advertising {
+      .wrapper .floorlist4 ul .advertising {
         width: 595px;
-        margin-bottom: 10px; }
-        .wrapper .floorlist-4 ul .advertising a {
+        margin-bottom: 10px;
+        margin-right: 5px; }
+        .wrapper .floorlist4 ul .advertising:nth-of-type(4n) {
+          margin-right: 0; }
+        .wrapper .floorlist4 ul .advertising a {
           width: 595px;
-          height: 380px; }
-          .wrapper .floorlist-4 ul .advertising a img {
+          height: 380px;
+          text-align: center; }
+          .wrapper .floorlist4 ul .advertising a img {
             width: 100%;
             height: 100%;
             margin-top: 0; }
-      .wrapper .floorlist-4 ul li .info {
-        padding: 0; }
-        .wrapper .floorlist-4 ul li .info .desc {
-          padding: 2px 15px 40px; }
-        .wrapper .floorlist-4 ul li .info .price {
-          margin: 0;
-          font-size: 16px;
-          color: #f51919; }
-  .wrapper .floorlist-5 {
+      .wrapper .floorlist4 ul li {
+        width: 293px;
+        height: 380px;
+        background: #ffffff;
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 7px; }
+        .wrapper .floorlist4 ul li:hover {
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+        .wrapper .floorlist4 ul li a {
+          display: block;
+          width: 293px;
+          height: 213px;
+          text-align: center; }
+          .wrapper .floorlist4 ul li a img {
+            display: inline-block;
+            width: 172px;
+            height: 172px;
+            margin-top: 41px; }
+        .wrapper .floorlist4 ul li .info {
+          height: 117px;
+          text-align: center;
+          padding: 0 20px; }
+          .wrapper .floorlist4 ul li .info .name {
+            padding-top: 16px;
+            font-size: 16px;
+            line-height: 30px;
+            color: #333333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .wrapper .floorlist4 ul li .info .desc {
+            font-size: 12px;
+            color: #333333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 2px 15px 40px; }
+          .wrapper .floorlist4 ul li .info .price {
+            font-size: 16px;
+            color: #f51919; }
+  .wrapper #floorlist-5 {
     padding-bottom: 40px; }
+    .wrapper #floorlist-5 li:nth-child(4n) {
+      margin-right: 0; }
 
 .foot-shopwrap {
   background: #fff;
